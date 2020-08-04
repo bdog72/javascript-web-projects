@@ -37,8 +37,10 @@ h1:hover {
 /* Bookmarks */
 .container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  /* flex-direction: row; */
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .item {
@@ -47,6 +49,8 @@ h1:hover {
   border-radius: var(--border-radius);
   padding: 20px;
   margin: 10px;
+  min-width: 300px;
+  justify-content: center;
 }
 
 .item:hover {
