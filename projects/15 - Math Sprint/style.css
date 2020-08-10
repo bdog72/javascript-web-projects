@@ -171,9 +171,9 @@ label {
   top: 1px;
 }
 
-button#homeBtn {
+/* button#homeBtn {
   color: #000;
-}
+} */
 
 button {
   cursor: pointer;

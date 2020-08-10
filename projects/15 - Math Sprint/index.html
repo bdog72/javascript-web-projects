@@ -76,8 +76,8 @@
         <div class="item-container"></div>
         <!-- Right/Wrong Buttons -->
         <div class="item-footer">
-          <button class="wrong">Wrong</button>
-          <button class="right">Right</button>
+          <button class="wrong" onclick="select(false)">Wrong</button>
+          <button class="right" onclick="select(true)">Right</button>
         </div>
       </div>
 
@@ -86,18 +86,21 @@
         <!-- Score Container  -->
         <div class="score-container">
           <h1 class="title">Your Time</h1>
-          <h1 class="final-time">3.4s</h1>
-          <h1 class="base-time">Base Time: 2.4s</h1>
-          <h1 class="penalty-time">Penalty: +1.0s</h1>
+          <h1 class="final-time"></h1>
+          <h1 class="base-time"></h1>
+          <h1 class="penalty-time"></h1>
         </div>
         <!-- Play Again -->
         <div class="score-footer">
-          <button class="play-again">Play Again</button>
+          <button onclick="playAgain()" class="play-again" hidden>
+            Play Again
+          </button>
         </div>
       </div>
     </div>
-    <button id="homeBtn">Home</button>
+    <!-- <button id="homeBtn">Home</button> -->
     <!-- Script -->
+    <script src="shuffle.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
